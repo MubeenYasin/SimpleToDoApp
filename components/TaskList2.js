@@ -26,7 +26,13 @@ const TaskList2 = (props) => {
             <Button title="add task" onPress={addTaskToList} />
             <View style={styles.listView}>
                 {
-                    tasklist2.map((item, i) => <Text style={styles.list} key={i}>{i + 1}:   {item}</Text>)
+                    tasklist2.map((item, i) =>
+                        <View>
+                            <Text style={styles.list} key={i}>
+                                {i + 1}:   {item}
+                            </Text>
+                        </View>
+                    )
                 }
             </View>
         </View>
