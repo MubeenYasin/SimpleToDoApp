@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 import Input from './components/Input';
 
-export default function App() {
+export default function App(props) {
   return (
     <View style={styles.container}>
       <Text>Welcome</Text>
-      <Input />
+      <Input/>
     </View>
   );
 }

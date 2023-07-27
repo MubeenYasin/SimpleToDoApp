@@ -1,31 +1,24 @@
 import React, { useState } from "react";
 import { TextInput, View, Text, Button } from "react-native";
+import TaskList from "./TaskList";
 
-const Input = () => {
-
+const Input = (props) => {
+    // useState to set state of user input
     const [inpuText, setInpuText] = useState('')
-    const [task, setTask] = useState([''])
-
-    // function InputedText(inputext) {
-    //     // console.log(inputext)
-    //     setInpuText(inputext)
-    // }
-    const InputedText = (inputext) => {
+ 
+    // set state into inputText
+    function InputedText(inputext){
         setInpuText(inputext)
-    }
-
-    // function AddTask() {
-    //     setTask([...task, inpuText])
-    // }
-    const AddTask = () => {
-        setTask([...task, inpuText])
     }
 
     return (
         <View>
-            <TextInput placeholder='Add a task' onChangeText={InputedText} />
-            <Button title="add task" onPress={AddTask} />
-            {task.map((item) => <Text key={item}>{item}</Text>)}
+            {/* to get input from user */}
+            <TextInput placeholder='write a task' onChangeText={InputedText} />
+            {/* <Text>{inpuText}</Text> */}
+
+            {/* to pass input to second component */}
+            <TaskList myInput={inpuText}/>
 
             
         </View>
