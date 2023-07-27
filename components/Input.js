@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { TextInput, View, Text, StyleSheet } from "react-native";
-import TaskList2 from "./TaskList2";
+import TaskList from "./TaskList";
 
 const Input2 = () => {
     const [inputText, setInputText] = useState('')
@@ -13,7 +13,7 @@ const Input2 = () => {
         <View>
         <TextInput style={styles.inputBar} placeholder='write a task' onChangeText={inputedText} />
 
-        <TaskList2 myInput={inputText}/>
+        <TaskList myInput={inputText}/>
         </View>
       );
 }

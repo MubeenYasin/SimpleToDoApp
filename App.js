@@ -1,12 +1,12 @@
 import { StyleSheet, Text, View } from 'react-native';
-import Input2 from './components/Input2';
+import Input from './components/Input';
 
 export default function App(props) {
   return (
     <View style={styles.container}>
       <View style={styles.appArea}>
         <Text style={styles.heading}>Welcome</Text>
-        <Input2 />
+        <Input />
       </View>
     </View>
   );
