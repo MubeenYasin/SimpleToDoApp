@@ -15,7 +15,7 @@ const TaskList2 = (props) => {
                 setTaskList2([...tasklist2, props.myInput])
             }
             else {
-                alert('Only 10 Task can be added. Buy premium version to add unlimeted task')
+                alert('--------Only 10 Task can be added--------- Buy premium version to add unlimeted task')
             }
         }
     }
@@ -29,7 +29,7 @@ const TaskList2 = (props) => {
                     tasklist2.map((item, i) =>
                         <View>
                             <Text style={styles.list} key={i}>
-                                {i + 1}:   {item}
+                                {i + 1}: {item}
                             </Text>
                         </View>
                     )
@@ -51,6 +51,6 @@ const styles = StyleSheet.create({
         marginVertical: 3,
         verticalAlign: 'middle',
         padding: 3,
-        paddingHorizontal: 5,
+        paddingHorizontal: 10,
     }
 })

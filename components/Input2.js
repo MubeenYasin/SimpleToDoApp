@@ -12,7 +12,6 @@ const Input2 = () => {
     return (
         <View>
         <TextInput style={styles.inputBar} placeholder='write a task' onChangeText={inputedText} />
-        {/* <Text>{inputText}</Text> */}
 
         <TaskList2 myInput={inputText}/>
         </View>
@@ -28,7 +27,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         height:35,
         marginVertical: 10,
-        paddingHorizontal: 5,
+        paddingHorizontal: 10,
         fontSize: 18,
     }
 });
