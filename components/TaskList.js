@@ -27,11 +27,9 @@ const TaskList = (props) => {
             <View style={styles.listView}>
                 {
                     tasklist2.map((item, i) =>
-                        <View>
-                            <Text style={styles.list} key={i}>
-                                {i + 1}- {item}
-                            </Text>
-                        </View>
+                        <Text style={styles.list} key={i}>
+                            {i + 1}- {item}
+                        </Text>
                     )
                 }
             </View>
