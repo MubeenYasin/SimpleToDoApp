@@ -2,14 +2,11 @@ import { StyleSheet, Text, View } from 'react-native';
 import Input from './components/Input';
 import Input2 from './components/Input2';
 
-export default function App() {
+export default function App(props) {
   return (
     <View style={styles.container}>
-      <View style={styles.appArea}>
-        <Text style={styles.heading}>Simple To-Do App</Text>
-        {/* <Input /> */}
-        <Input2 />
-      </View>
+      <Text>Welcome</Text>
+      <Input />
     </View>
   );
 }
