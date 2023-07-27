@@ -2,7 +2,7 @@ import { useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
 
 
-const TaskList2 = (props) => {
+const TaskList = (props) => {
 
     const [tasklist2, setTaskList2] = useState([])
 
@@ -29,7 +29,7 @@ const TaskList2 = (props) => {
                     tasklist2.map((item, i) =>
                         <View>
                             <Text style={styles.list} key={i}>
-                                {i + 1}: {item}
+                                {i + 1}- {item}
                             </Text>
                         </View>
                     )
@@ -38,7 +38,7 @@ const TaskList2 = (props) => {
         </View>
     );
 }
-export default TaskList2;
+export default TaskList;
 
 const styles = StyleSheet.create({
     listView: {
